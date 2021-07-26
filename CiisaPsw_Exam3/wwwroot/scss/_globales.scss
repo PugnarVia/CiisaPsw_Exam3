@@ -1,0 +1,83 @@
+$color-white: #ffff;
+$color-gray: #ececec;
+$color-yellow-sunlight: #f1c40f;
+$color-red-blur: #d9534f;
+$color-red: #d43f3a;
+$color-blue: #1765be;
+$color-blue-blur: #3476c0;
+$color-gray-dark: #1d1d1d;
+$color-black: #000;
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+html, body{
+	font-size: 16px;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+header{
+	border-top: 0px solid $color-white;
+    background: $color-white;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: #000;
+	background-color: #ced4da;
+	margin-bottom: 40px;
+}
+
+footer{
+    background-color: black;
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 40px;
+  	color: white;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.center-flex{
+	display: flex;
+    align-items: center;
+}
+
+.bienvenida{
+	text-align: center;
+	padding-top: 50px;
+}
+
+.text-danger {
+	color: $color-red !important;
+  }

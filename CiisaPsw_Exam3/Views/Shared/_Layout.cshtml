@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CiisaPsw_Exam3</title>
+    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="~/css/styles.css">
+</head>
+<body>
+    <header>
+        <!--<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Ciisa-Psw Examen 3</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Departamento" asp-action="Index">Departamentos</a>
+                        </li>
+                    </ul>
+                    <ul id="profile" class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><img src="~/css/img/user_img_opt.jpg" alt="User profile photo"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <nav>
+            <div class="container center-flex">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Examen 3</a>
+                <div>
+                    <ul class="nav_sect">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Producto" asp-action="Index">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Departamento" asp-action="Index">Departamentos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="nav_sect">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img id="profile_photo" src="~/css/img/user_img_opt.jpg" alt="User profile photo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2021 - Ciisa-Psw - <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

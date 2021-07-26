@@ -1,0 +1,57 @@
+nav{
+    height: 60px;
+    width: 100%;
+	display: flex;
+	background-color: $color-blue;
+	color: $color-white;
+	justify-content: space-between;
+    align-items: center;
+    box-shadow: initial;
+    position: fixed;
+}
+
+.navbar-brand {
+    display: inline-block;
+    color: $color-white;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.nav_sect{
+    display: flex;
+    padding: 0 0;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+	list-style: none;
+}
+
+.nav-link{
+    color: $color-white;
+    padding-bottom: 20px;
+}
+
+.nav-link:hover{
+    color: $color-gray;
+}
+
+#profile_photo{
+	display: block;
+	margin: 0 auto;
+	border-radius: 50em;
+    box-shadow: inset;
+}
+
+footer{
+    background-color: $color-gray-dark;
+    color: $color-white;
+}
